@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import imageInSrc from './imageInSrc.jpg';
+import './style.css';
+  export default class style extends Component {
+    render(){
+      return (
+        <div>
+          <div id="map" style={{maxWidth:"100vw" , border :"solid 1px black"}}>
+              <h1  className="title red">Your name here</h1>
+              <br/>
+              <img src={imageInSrc}  width="320" alt="imageInSrc" />
+              <br/>
+              <img src="imageInPublic.jpg" width="320" alt="imageInPublic" />
+          </div>
+          <video width="320" height="240" controls>
+            <source src="myVideo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      );
+    }
+  
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
